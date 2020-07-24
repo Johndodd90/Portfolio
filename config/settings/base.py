@@ -42,8 +42,11 @@ LOCALE_PATHS = [str(ROOT_DIR / "locale")]
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
 DATABASES = {
-    "default": env.db("DATABASE_URL", default="postgres://localhost/portfolio")
+    # "default": env.db("DATABASE_URL", default="postgres://localhost/portfolio")
+    "default": env.db("DATABASE_URL", default="postgres://postgres:123456@localhost/portfolio")
 }
+
+
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
 # URLS
@@ -75,7 +78,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "portfolio.users.apps.UsersConfig",
-    # Your stuff: custom apps go here
+    "portfolio.blog.apps.BlogConfig",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
