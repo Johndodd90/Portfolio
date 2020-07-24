@@ -8,4 +8,8 @@ urlpatterns = [
         view=views.BlogListView.as_view(),
         name='list'
     ),
+    path(route='<slug:slug>/',
+         view=views.BlogDetailView.as_view(),
+         name='detail'
+         ),
 ]

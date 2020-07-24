@@ -7,7 +7,7 @@
 
 <ul>
 {% for blog in blog_list %}
-<li><a href="#TODO">{{ blog.title}} </a> </li>
+<li><a href="{% url 'blog:detail' blog.slug %}">{{ blog.title}} </a> </li>
 
 {% endfor %}
 </ul>
