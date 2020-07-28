@@ -1,1 +1,19 @@
 {% extends "base.html" %}
+{% load static i18n %}
+{% block content %}
+<div class="video-background">
+    <div class="video-wrap">
+        <div id="video">
+            <video id="bgvid" autoplay loop muted playsinline>
+                <source src="{% static 'images/stars.mp4' %}" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</div>
+
+<div class="caption text-center">
+    <h1>BOOTSTRAP VIDEO LANDING</h1>
+    <h3>BOOTSTRAP THEME</h3>
+    <div class="btn btn-outline-light btn-lg" href="#">GET STARTED</div>
+</div>
+{% endblock content %}

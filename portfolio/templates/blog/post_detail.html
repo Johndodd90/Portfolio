@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Blog: {{ post.title }}{% endblock title %}
+{% block content %}
+
+<h2>{{ post.title }}</h2>
+
+{% if post.body %}
+<p>Post: {{ post.body }}</p>
+{% endif %}
+
+{% endblock content %}

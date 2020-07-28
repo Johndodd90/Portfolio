@@ -1,11 +1,23 @@
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 
-from .models import Blog
+from .models import Post, Category, Comment
 
 
 class BlogListView(ListView):
-    model = Blog
+    model = Post
 
 
 class BlogDetailView(DetailView):
-    model = Blog
+    model = Post
+
+
+class BlogCategoryView(DetailView):
+    model = Category
+
+
+class CommentCreateView(CreateView):
+    model = Comment
+    fields = [
+        'author',
+        'body',
+    ]
