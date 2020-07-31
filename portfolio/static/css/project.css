@@ -12,49 +12,66 @@
   border-color: #eed3d7;
 }
 
-
-
 /*============= ADDED BY JOHN =============*/
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
 body {
   overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
-  color: #505962
+  font-family: "Lato", sans-serif;
+  color: #505962;
 }
 
 .navbar {
-  background: rgba(0,0,0,0.6);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.6);
 }
+
 .navbar-brand img {
   height: 2rem;
 }
 
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #1ebba3;
+}
+
 .video-background {
   position: relative;
-  width: 100%; 
+  width: 100%;
   min-height: 100vh;
-  background-color: rgba(0,0,0,0.2)
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .caption {
   position: absolute;
   top: 38%;
-  width:100%;
+  width: 100%;
   color: white;
 }
 
 .caption h1 {
   font-size: 3rem;
   font-weight: 700;
-  letter-spacing: .2rem;
-  text-shadow: .1rem .1rem .8rem black;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
   padding-bottom: 1rem;
 }
 
 .caption h3 {
   font-size: 2rem;
-  text-shadow: .1rem .1rem .5rem black;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
   padding-bottom: 1.6rem;
 }
 
@@ -62,7 +79,7 @@ body {
   border-width: medium;
   border-radius: 0;
   font-size: 1.1rem;
-  padding: .6rem 1.3rem;
+  padding: 0.6rem 1.3rem;
 }
 
 /*============= COURSE SECTION =============*/
@@ -72,17 +89,17 @@ body {
   padding-top: 2rem;
 }
 .col-md-8 h1 {
-    font-size: 2.4rem;
-  }
+  font-size: 2.4rem;
+}
 .btn-secondary {
   border-width: medium;
   border-radius: 0;
-  padding: .6rem 1.2rem;
+  padding: 0.6rem 1.2rem;
   font-size: 1.2rem;
   text-transform: uppercase;
   margin: 1rem;
-  border-color: #1EBBA3;
-  background-color: #1EBBA3;
+  border-color: #1ebba3;
+  background-color: #1ebba3;
   color: white;
 }
 .btn-secondary:hover,
@@ -92,29 +109,26 @@ body {
   color: white;
 }
 
-
 @media (max-width: 768px) {
   .caption h1 {
-    font-size: 1.4rem;    
-    letter-spacing: .15rem;    
+    font-size: 1.4rem;
+    letter-spacing: 0.15rem;
     padding-bottom: 0.5rem;
   }
-  
+
   .caption h3 {
-    font-size: 1.1rem;    
+    font-size: 1.1rem;
     padding-bottom: 1.2rem;
   }
-  
-  .btn-lg {    
+
+  .btn-lg {
     font-size: 1rem;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
   .col-md-8 h1 {
     font-size: 1.7rem;
   }
 }
-
-
 
 /*============ BOOTSTRAP BREAK POINTS:
 
@@ -134,4 +148,3 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
-
